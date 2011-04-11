@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27E9DE41135386F200B45B7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE40135386F200B45B7F /* UIKit.framework */; };
+		27E9DE43135386F200B45B7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE42135386F200B45B7F /* Foundation.framework */; };
+		27E9DE45135386F200B45B7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE44135386F200B45B7F /* CoreGraphics.framework */; };
+		27E9DE4B135386F200B45B7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DE49135386F200B45B7F /* InfoPlist.strings */; };
+		27E9DE4E135386F200B45B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DE4D135386F200B45B7F /* main.m */; };
+		27E9DE51135386F200B45B7F /* ZIPToStateAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DE50135386F200B45B7F /* ZIPToStateAppAppDelegate.m */; };
+		27E9DE55135386F200B45B7F /* ZIPToStateAppAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DE54135386F200B45B7F /* ZIPToStateAppAppDelegate_iPhone.m */; };
+		27E9DE58135386F200B45B7F /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DE56135386F200B45B7F /* MainWindow_iPhone.xib */; };
+		27E9DE5C135386F200B45B7F /* ZIPToStateAppAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DE5B135386F200B45B7F /* ZIPToStateAppAppDelegate_iPad.m */; };
+		27E9DE5F135386F200B45B7F /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DE5D135386F200B45B7F /* MainWindow_iPad.xib */; };
+		27E9DE66135386F200B45B7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE40135386F200B45B7F /* UIKit.framework */; };
+		27E9DE67135386F200B45B7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE42135386F200B45B7F /* Foundation.framework */; };
+		27E9DE68135386F200B45B7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE44135386F200B45B7F /* CoreGraphics.framework */; };
+		27E9DE70135386F200B45B7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DE6E135386F200B45B7F /* InfoPlist.strings */; };
+		27E9DE73135386F200B45B7F /* ZIPToStateAppTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DE72135386F200B45B7F /* ZIPToStateAppTests.h */; };
+		27E9DE75135386F200B45B7F /* ZIPToStateAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DE74135386F200B45B7F /* ZIPToStateAppTests.m */; };
+		27E9DE831353870400B45B7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE42135386F200B45B7F /* Foundation.framework */; };
+		27E9DE8D1353870400B45B7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE40135386F200B45B7F /* UIKit.framework */; };
+		27E9DE8E1353870400B45B7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE42135386F200B45B7F /* Foundation.framework */; };
+		27E9DE8F1353870400B45B7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE44135386F200B45B7F /* CoreGraphics.framework */; };
+		27E9DE921353870400B45B7F /* libZIPToState.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE821353870400B45B7F /* libZIPToState.a */; };
+		27E9DE981353870400B45B7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DE961353870400B45B7F /* InfoPlist.strings */; };
+		27E9DE9B1353870400B45B7F /* ZIPToStateTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DE9A1353870400B45B7F /* ZIPToStateTests.h */; };
+		27E9DE9D1353870400B45B7F /* ZIPToStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DE9C1353870400B45B7F /* ZIPToStateTests.m */; };
+		27E9DEA61353874300B45B7F /* ZIPToState.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DEA51353874300B45B7F /* ZIPToState.m */; };
+		27E9DEA71353878100B45B7F /* ZIPToState.h in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DEA41353874300B45B7F /* ZIPToState.h */; };
+		27E9DEA81353878400B45B7F /* ZIPToState.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DEA51353874300B45B7F /* ZIPToState.m */; };
+		27E9DEA91353892B00B45B7F /* libZIPToState.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE821353870400B45B7F /* libZIPToState.a */; };
+		27E9DEAB13538CD200B45B7F /* zipranges.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DEAA13538CD200B45B7F /* zipranges.sqlite */; };
+		27E9DEAC13538CD200B45B7F /* zipranges.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DEAA13538CD200B45B7F /* zipranges.sqlite */; };
+		27E9DEAD13538CD200B45B7F /* zipranges.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DEAA13538CD200B45B7F /* zipranges.sqlite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27E9DE69135386F200B45B7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27E9DE33135386F200B45B7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27E9DE3B135386F200B45B7F;
+			remoteInfo = ZIPToStateApp;
+		};
+		27E9DE901353870400B45B7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27E9DE33135386F200B45B7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27E9DE811353870400B45B7F;
+			remoteInfo = ZIPToState;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27E9DE3C135386F200B45B7F /* ZIPToStateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZIPToStateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E9DE40135386F200B45B7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27E9DE42135386F200B45B7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27E9DE44135386F200B45B7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27E9DE48135386F200B45B7F /* ZIPToStateApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZIPToStateApp-Info.plist"; sourceTree = "<group>"; };
+		27E9DE4A135386F200B45B7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27E9DE4C135386F200B45B7F /* ZIPToStateApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZIPToStateApp-Prefix.pch"; sourceTree = "<group>"; };
+		27E9DE4D135386F200B45B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27E9DE4F135386F200B45B7F /* ZIPToStateAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIPToStateAppAppDelegate.h; sourceTree = "<group>"; };
+		27E9DE50135386F200B45B7F /* ZIPToStateAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIPToStateAppAppDelegate.m; sourceTree = "<group>"; };
+		27E9DE53135386F200B45B7F /* ZIPToStateAppAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZIPToStateAppAppDelegate_iPhone.h; path = iPhone/ZIPToStateAppAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		27E9DE54135386F200B45B7F /* ZIPToStateAppAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZIPToStateAppAppDelegate_iPhone.m; path = iPhone/ZIPToStateAppAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		27E9DE57135386F200B45B7F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		27E9DE5A135386F200B45B7F /* ZIPToStateAppAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZIPToStateAppAppDelegate_iPad.h; path = iPad/ZIPToStateAppAppDelegate_iPad.h; sourceTree = "<group>"; };
+		27E9DE5B135386F200B45B7F /* ZIPToStateAppAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZIPToStateAppAppDelegate_iPad.m; path = iPad/ZIPToStateAppAppDelegate_iPad.m; sourceTree = "<group>"; };
+		27E9DE5E135386F200B45B7F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		27E9DE65135386F200B45B7F /* ZIPToStateAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZIPToStateAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E9DE6D135386F200B45B7F /* ZIPToStateAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZIPToStateAppTests-Info.plist"; sourceTree = "<group>"; };
+		27E9DE6F135386F200B45B7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27E9DE71135386F200B45B7F /* ZIPToStateAppTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZIPToStateAppTests-Prefix.pch"; sourceTree = "<group>"; };
+		27E9DE72135386F200B45B7F /* ZIPToStateAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIPToStateAppTests.h; sourceTree = "<group>"; };
+		27E9DE74135386F200B45B7F /* ZIPToStateAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIPToStateAppTests.m; sourceTree = "<group>"; };
+		27E9DE821353870400B45B7F /* libZIPToState.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZIPToState.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E9DE861353870400B45B7F /* ZIPToState-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZIPToState-Prefix.pch"; sourceTree = "<group>"; };
+		27E9DE8C1353870400B45B7F /* ZIPToStateTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZIPToStateTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E9DE951353870400B45B7F /* ZIPToStateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZIPToStateTests-Info.plist"; sourceTree = "<group>"; };
+		27E9DE971353870400B45B7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27E9DE991353870400B45B7F /* ZIPToStateTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZIPToStateTests-Prefix.pch"; sourceTree = "<group>"; };
+		27E9DE9A1353870400B45B7F /* ZIPToStateTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIPToStateTests.h; sourceTree = "<group>"; };
+		27E9DE9C1353870400B45B7F /* ZIPToStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIPToStateTests.m; sourceTree = "<group>"; };
+		27E9DEA41353874300B45B7F /* ZIPToState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIPToState.h; sourceTree = "<group>"; };
+		27E9DEA51353874300B45B7F /* ZIPToState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIPToState.m; sourceTree = "<group>"; };
+		27E9DEAA13538CD200B45B7F /* zipranges.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = zipranges.sqlite; path = ../zipranges.sqlite; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27E9DE39135386F200B45B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DEA91353892B00B45B7F /* libZIPToState.a in Frameworks */,
+				27E9DE41135386F200B45B7F /* UIKit.framework in Frameworks */,
+				27E9DE43135386F200B45B7F /* Foundation.framework in Frameworks */,
+				27E9DE45135386F200B45B7F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E9DE61135386F200B45B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DE66135386F200B45B7F /* UIKit.framework in Frameworks */,
+				27E9DE67135386F200B45B7F /* Foundation.framework in Frameworks */,
+				27E9DE68135386F200B45B7F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E9DE7F1353870400B45B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DE831353870400B45B7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E9DE881353870400B45B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DE8D1353870400B45B7F /* UIKit.framework in Frameworks */,
+				27E9DE8E1353870400B45B7F /* Foundation.framework in Frameworks */,
+				27E9DE8F1353870400B45B7F /* CoreGraphics.framework in Frameworks */,
+				27E9DE921353870400B45B7F /* libZIPToState.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27E9DE31135386F200B45B7F = {
+			isa = PBXGroup;
+			children = (
+				27E9DE821353870400B45B7F /* libZIPToState.a */,
+				27E9DEAA13538CD200B45B7F /* zipranges.sqlite */,
+				27E9DE46135386F200B45B7F /* ZIPToStateApp */,
+				27E9DE6B135386F200B45B7F /* ZIPToStateAppTests */,
+				27E9DE841353870400B45B7F /* ZIPToState */,
+				27E9DE931353870400B45B7F /* ZIPToStateTests */,
+				27E9DE3F135386F200B45B7F /* Frameworks */,
+				27E9DE3D135386F200B45B7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27E9DE3D135386F200B45B7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE3C135386F200B45B7F /* ZIPToStateApp.app */,
+				27E9DE65135386F200B45B7F /* ZIPToStateAppTests.octest */,
+				27E9DE8C1353870400B45B7F /* ZIPToStateTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27E9DE3F135386F200B45B7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE40135386F200B45B7F /* UIKit.framework */,
+				27E9DE42135386F200B45B7F /* Foundation.framework */,
+				27E9DE44135386F200B45B7F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27E9DE46135386F200B45B7F /* ZIPToStateApp */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE4F135386F200B45B7F /* ZIPToStateAppAppDelegate.h */,
+				27E9DE50135386F200B45B7F /* ZIPToStateAppAppDelegate.m */,
+				27E9DE52135386F200B45B7F /* iPhone */,
+				27E9DE59135386F200B45B7F /* iPad */,
+				27E9DE47135386F200B45B7F /* Supporting Files */,
+			);
+			path = ZIPToStateApp;
+			sourceTree = "<group>";
+		};
+		27E9DE47135386F200B45B7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE48135386F200B45B7F /* ZIPToStateApp-Info.plist */,
+				27E9DE49135386F200B45B7F /* InfoPlist.strings */,
+				27E9DE4C135386F200B45B7F /* ZIPToStateApp-Prefix.pch */,
+				27E9DE4D135386F200B45B7F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27E9DE52135386F200B45B7F /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE53135386F200B45B7F /* ZIPToStateAppAppDelegate_iPhone.h */,
+				27E9DE54135386F200B45B7F /* ZIPToStateAppAppDelegate_iPhone.m */,
+				27E9DE56135386F200B45B7F /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		27E9DE59135386F200B45B7F /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE5A135386F200B45B7F /* ZIPToStateAppAppDelegate_iPad.h */,
+				27E9DE5B135386F200B45B7F /* ZIPToStateAppAppDelegate_iPad.m */,
+				27E9DE5D135386F200B45B7F /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		27E9DE6B135386F200B45B7F /* ZIPToStateAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE72135386F200B45B7F /* ZIPToStateAppTests.h */,
+				27E9DE74135386F200B45B7F /* ZIPToStateAppTests.m */,
+				27E9DE6C135386F200B45B7F /* Supporting Files */,
+			);
+			path = ZIPToStateAppTests;
+			sourceTree = "<group>";
+		};
+		27E9DE6C135386F200B45B7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE6D135386F200B45B7F /* ZIPToStateAppTests-Info.plist */,
+				27E9DE6E135386F200B45B7F /* InfoPlist.strings */,
+				27E9DE71135386F200B45B7F /* ZIPToStateAppTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27E9DE841353870400B45B7F /* ZIPToState */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE851353870400B45B7F /* Supporting Files */,
+				27E9DEA41353874300B45B7F /* ZIPToState.h */,
+				27E9DEA51353874300B45B7F /* ZIPToState.m */,
+			);
+			path = ZIPToState;
+			sourceTree = "<group>";
+		};
+		27E9DE851353870400B45B7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE861353870400B45B7F /* ZIPToState-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27E9DE931353870400B45B7F /* ZIPToStateTests */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE9A1353870400B45B7F /* ZIPToStateTests.h */,
+				27E9DE9C1353870400B45B7F /* ZIPToStateTests.m */,
+				27E9DE941353870400B45B7F /* Supporting Files */,
+			);
+			path = ZIPToStateTests;
+			sourceTree = "<group>";
+		};
+		27E9DE941353870400B45B7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27E9DE951353870400B45B7F /* ZIPToStateTests-Info.plist */,
+				27E9DE961353870400B45B7F /* InfoPlist.strings */,
+				27E9DE991353870400B45B7F /* ZIPToStateTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		27E9DE801353870400B45B7F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27E9DE3B135386F200B45B7F /* ZIPToStateApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E9DE78135386F200B45B7F /* Build configuration list for PBXNativeTarget "ZIPToStateApp" */;
+			buildPhases = (
+				27E9DE38135386F200B45B7F /* Sources */,
+				27E9DE39135386F200B45B7F /* Frameworks */,
+				27E9DE3A135386F200B45B7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZIPToStateApp;
+			productName = ZIPToStateApp;
+			productReference = 27E9DE3C135386F200B45B7F /* ZIPToStateApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27E9DE64135386F200B45B7F /* ZIPToStateAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E9DE7B135386F200B45B7F /* Build configuration list for PBXNativeTarget "ZIPToStateAppTests" */;
+			buildPhases = (
+				27E9DE60135386F200B45B7F /* Sources */,
+				27E9DE61135386F200B45B7F /* Frameworks */,
+				27E9DE62135386F200B45B7F /* Resources */,
+				27E9DE63135386F200B45B7F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27E9DE6A135386F200B45B7F /* PBXTargetDependency */,
+			);
+			name = ZIPToStateAppTests;
+			productName = ZIPToStateAppTests;
+			productReference = 27E9DE65135386F200B45B7F /* ZIPToStateAppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		27E9DE811353870400B45B7F /* ZIPToState */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E9DE9E1353870400B45B7F /* Build configuration list for PBXNativeTarget "ZIPToState" */;
+			buildPhases = (
+				27E9DE7E1353870400B45B7F /* Sources */,
+				27E9DE7F1353870400B45B7F /* Frameworks */,
+				27E9DE801353870400B45B7F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZIPToState;
+			productName = ZIPToState;
+			productReference = 27E9DE821353870400B45B7F /* libZIPToState.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		27E9DE8B1353870400B45B7F /* ZIPToStateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E9DEA11353870400B45B7F /* Build configuration list for PBXNativeTarget "ZIPToStateTests" */;
+			buildPhases = (
+				27E9DE871353870400B45B7F /* Sources */,
+				27E9DE881353870400B45B7F /* Frameworks */,
+				27E9DE891353870400B45B7F /* Resources */,
+				27E9DE8A1353870400B45B7F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27E9DE911353870400B45B7F /* PBXTargetDependency */,
+			);
+			name = ZIPToStateTests;
+			productName = ZIPToStateTests;
+			productReference = 27E9DE8C1353870400B45B7F /* ZIPToStateTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27E9DE33135386F200B45B7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Flying Yeti";
+			};
+			buildConfigurationList = 27E9DE36135386F200B45B7F /* Build configuration list for PBXProject "ZIPToStateApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27E9DE31135386F200B45B7F;
+			productRefGroup = 27E9DE3D135386F200B45B7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27E9DE3B135386F200B45B7F /* ZIPToStateApp */,
+				27E9DE64135386F200B45B7F /* ZIPToStateAppTests */,
+				27E9DE811353870400B45B7F /* ZIPToState */,
+				27E9DE8B1353870400B45B7F /* ZIPToStateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27E9DE3A135386F200B45B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DE4B135386F200B45B7F /* InfoPlist.strings in Resources */,
+				27E9DE58135386F200B45B7F /* MainWindow_iPhone.xib in Resources */,
+				27E9DE5F135386F200B45B7F /* MainWindow_iPad.xib in Resources */,
+				27E9DEAB13538CD200B45B7F /* zipranges.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E9DE62135386F200B45B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DE70135386F200B45B7F /* InfoPlist.strings in Resources */,
+				27E9DE73135386F200B45B7F /* ZIPToStateAppTests.h in Resources */,
+				27E9DEAC13538CD200B45B7F /* zipranges.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E9DE891353870400B45B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DE981353870400B45B7F /* InfoPlist.strings in Resources */,
+				27E9DE9B1353870400B45B7F /* ZIPToStateTests.h in Resources */,
+				27E9DEAD13538CD200B45B7F /* zipranges.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27E9DE63135386F200B45B7F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		27E9DE8A1353870400B45B7F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27E9DE38135386F200B45B7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DE4E135386F200B45B7F /* main.m in Sources */,
+				27E9DE51135386F200B45B7F /* ZIPToStateAppAppDelegate.m in Sources */,
+				27E9DE55135386F200B45B7F /* ZIPToStateAppAppDelegate_iPhone.m in Sources */,
+				27E9DE5C135386F200B45B7F /* ZIPToStateAppAppDelegate_iPad.m in Sources */,
+				27E9DEA61353874300B45B7F /* ZIPToState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E9DE60135386F200B45B7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DE75135386F200B45B7F /* ZIPToStateAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E9DE7E1353870400B45B7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DEA71353878100B45B7F /* ZIPToState.h in Sources */,
+				27E9DEA81353878400B45B7F /* ZIPToState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E9DE871353870400B45B7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E9DE9D1353870400B45B7F /* ZIPToStateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27E9DE6A135386F200B45B7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27E9DE3B135386F200B45B7F /* ZIPToStateApp */;
+			targetProxy = 27E9DE69135386F200B45B7F /* PBXContainerItemProxy */;
+		};
+		27E9DE911353870400B45B7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27E9DE811353870400B45B7F /* ZIPToState */;
+			targetProxy = 27E9DE901353870400B45B7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27E9DE49135386F200B45B7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27E9DE4A135386F200B45B7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27E9DE56135386F200B45B7F /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27E9DE57135386F200B45B7F /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		27E9DE5D135386F200B45B7F /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27E9DE5E135386F200B45B7F /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		27E9DE6E135386F200B45B7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27E9DE6F135386F200B45B7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27E9DE961353870400B45B7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27E9DE971353870400B45B7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27E9DE76135386F200B45B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27E9DE77135386F200B45B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27E9DE79135386F200B45B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIPToStateApp/ZIPToStateApp-Prefix.pch";
+				INFOPLIST_FILE = "ZIPToStateApp/ZIPToStateApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		27E9DE7A135386F200B45B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIPToStateApp/ZIPToStateApp-Prefix.pch";
+				INFOPLIST_FILE = "ZIPToStateApp/ZIPToStateApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		27E9DE7C135386F200B45B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZIPToStateApp.app/ZIPToStateApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIPToStateAppTests/ZIPToStateAppTests-Prefix.pch";
+				INFOPLIST_FILE = "ZIPToStateAppTests/ZIPToStateAppTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		27E9DE7D135386F200B45B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZIPToStateApp.app/ZIPToStateApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIPToStateAppTests/ZIPToStateAppTests-Prefix.pch";
+				INFOPLIST_FILE = "ZIPToStateAppTests/ZIPToStateAppTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		27E9DE9F1353870400B45B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/ZIPToState.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIPToState/ZIPToState-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		27E9DEA01353870400B45B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/ZIPToState.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIPToState/ZIPToState-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		27E9DEA21353870400B45B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIPToStateTests/ZIPToStateTests-Prefix.pch";
+				INFOPLIST_FILE = "ZIPToStateTests/ZIPToStateTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		27E9DEA31353870400B45B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIPToStateTests/ZIPToStateTests-Prefix.pch";
+				INFOPLIST_FILE = "ZIPToStateTests/ZIPToStateTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27E9DE36135386F200B45B7F /* Build configuration list for PBXProject "ZIPToStateApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E9DE76135386F200B45B7F /* Debug */,
+				27E9DE77135386F200B45B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27E9DE78135386F200B45B7F /* Build configuration list for PBXNativeTarget "ZIPToStateApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E9DE79135386F200B45B7F /* Debug */,
+				27E9DE7A135386F200B45B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27E9DE7B135386F200B45B7F /* Build configuration list for PBXNativeTarget "ZIPToStateAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E9DE7C135386F200B45B7F /* Debug */,
+				27E9DE7D135386F200B45B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27E9DE9E1353870400B45B7F /* Build configuration list for PBXNativeTarget "ZIPToState" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E9DE9F1353870400B45B7F /* Debug */,
+				27E9DEA01353870400B45B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27E9DEA11353870400B45B7F /* Build configuration list for PBXNativeTarget "ZIPToStateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E9DEA21353870400B45B7F /* Debug */,
+				27E9DEA31353870400B45B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27E9DE33135386F200B45B7F /* Project object */;
+}

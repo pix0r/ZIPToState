@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ZIPToState' target in the 'ZIPToState' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
