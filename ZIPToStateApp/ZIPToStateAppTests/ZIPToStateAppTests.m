@@ -7,6 +7,7 @@
 //
 
 #import "ZIPToStateAppTests.h"
+#import "ZIPToState.h"
 
 
 @implementation ZIPToStateAppTests
@@ -25,9 +26,11 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testDanaPoint
 {
-    STFail(@"Unit tests are not implemented yet in ZIPToStateAppTests");
+    ZIPToState *z = [[ZIPToState alloc] init];
+    NSString *result = [z stateCodeForZIP:@"92629"];
+    STAssertEquals(result, @"CA", @"Dana Point is in California");
 }
 
 @end
