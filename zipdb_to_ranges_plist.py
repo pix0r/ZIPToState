@@ -25,8 +25,7 @@ INNER JOIN States
 conn_in = sqlite3.connect(input_file)
 c_in = conn_in.cursor()
 
-plist = dict(
-		)
+plist = []
 
 c_in.execute(zip_query)
 
@@ -40,10 +39,11 @@ for row in c_in:
 	curr_state = row[2]
 	total_zips += 1
 	if curr_state != last_state:
-		plist[curr_zip] = dict(
-				state = curr_state,
-				code = curr_state_code,
-				)
+		plist.append(dict(
+			zip = curr_zip,
+			state = curr_state,
+			code = curr_state_code,
+			))
 		last_state = curr_state
 		total_ranges += 1
 

@@ -33,13 +33,9 @@
 		27E9DE9D1353870400B45B7F /* ZIPToStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DE9C1353870400B45B7F /* ZIPToStateTests.m */; };
 		27E9DEA81353878400B45B7F /* ZIPToState.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E9DEA51353874300B45B7F /* ZIPToState.m */; };
 		27E9DEA91353892B00B45B7F /* libZIPToState.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DE821353870400B45B7F /* libZIPToState.a */; };
-		27E9DEAF1353AC8400B45B7F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DEAE1353AC8400B45B7F /* libsqlite3.dylib */; };
-		27E9DEB31353ADB200B45B7F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DEB21353ADB200B45B7F /* libsqlite3.dylib */; };
-		27E9DEB51353ADCD00B45B7F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DEB41353ADCD00B45B7F /* libsqlite3.dylib */; };
-		27E9DEB71353ADD800B45B7F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E9DEB61353ADD800B45B7F /* libsqlite3.dylib */; };
-		27E9DED81354AB8800B45B7F /* zipranges.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DED71354AB8800B45B7F /* zipranges.sqlite */; };
-		27E9DED91354AB8800B45B7F /* zipranges.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DED71354AB8800B45B7F /* zipranges.sqlite */; };
-		27E9DEDA1354AB8800B45B7F /* zipranges.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DED71354AB8800B45B7F /* zipranges.sqlite */; };
+		27E9DEE01354B0D500B45B7F /* zipranges.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DEDF1354B0D500B45B7F /* zipranges.plist */; };
+		27E9DEE11354B0D500B45B7F /* zipranges.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DEDF1354B0D500B45B7F /* zipranges.plist */; };
+		27E9DEE21354B0D500B45B7F /* zipranges.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27E9DEDF1354B0D500B45B7F /* zipranges.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,11 +95,7 @@
 		27E9DE9C1353870400B45B7F /* ZIPToStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIPToStateTests.m; sourceTree = "<group>"; };
 		27E9DEA41353874300B45B7F /* ZIPToState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIPToState.h; sourceTree = "<group>"; };
 		27E9DEA51353874300B45B7F /* ZIPToState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIPToState.m; sourceTree = "<group>"; };
-		27E9DEAE1353AC8400B45B7F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		27E9DEB21353ADB200B45B7F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		27E9DEB41353ADCD00B45B7F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		27E9DEB61353ADD800B45B7F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		27E9DED71354AB8800B45B7F /* zipranges.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = zipranges.sqlite; path = ../zipranges.sqlite; sourceTree = "<group>"; };
+		27E9DEDF1354B0D500B45B7F /* zipranges.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = zipranges.plist; path = ../zipranges.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E9DEB31353ADB200B45B7F /* libsqlite3.dylib in Frameworks */,
 				27E9DEA91353892B00B45B7F /* libZIPToState.a in Frameworks */,
 				27E9DE41135386F200B45B7F /* UIKit.framework in Frameworks */,
 				27E9DE43135386F200B45B7F /* Foundation.framework in Frameworks */,
@@ -123,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E9DEB51353ADCD00B45B7F /* libsqlite3.dylib in Frameworks */,
 				27E9DE66135386F200B45B7F /* UIKit.framework in Frameworks */,
 				27E9DE67135386F200B45B7F /* Foundation.framework in Frameworks */,
 				27E9DE68135386F200B45B7F /* CoreGraphics.framework in Frameworks */,
@@ -134,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E9DEAF1353AC8400B45B7F /* libsqlite3.dylib in Frameworks */,
 				27E9DE831353870400B45B7F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +132,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E9DEB71353ADD800B45B7F /* libsqlite3.dylib in Frameworks */,
 				27E9DE8D1353870400B45B7F /* UIKit.framework in Frameworks */,
 				27E9DE8E1353870400B45B7F /* Foundation.framework in Frameworks */,
 				27E9DE8F1353870400B45B7F /* CoreGraphics.framework in Frameworks */,
@@ -158,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				27E9DE821353870400B45B7F /* libZIPToState.a */,
-				27E9DED71354AB8800B45B7F /* zipranges.sqlite */,
+				27E9DEDF1354B0D500B45B7F /* zipranges.plist */,
 				27E9DE46135386F200B45B7F /* ZIPToStateApp */,
 				27E9DE6B135386F200B45B7F /* ZIPToStateAppTests */,
 				27E9DE841353870400B45B7F /* ZIPToState */,
@@ -181,10 +169,6 @@
 		27E9DE3F135386F200B45B7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27E9DEB61353ADD800B45B7F /* libsqlite3.dylib */,
-				27E9DEB41353ADCD00B45B7F /* libsqlite3.dylib */,
-				27E9DEB21353ADB200B45B7F /* libsqlite3.dylib */,
-				27E9DEAE1353AC8400B45B7F /* libsqlite3.dylib */,
 				27E9DE40135386F200B45B7F /* UIKit.framework */,
 				27E9DE42135386F200B45B7F /* Foundation.framework */,
 				27E9DE44135386F200B45B7F /* CoreGraphics.framework */,
@@ -415,7 +399,7 @@
 				27E9DE4B135386F200B45B7F /* InfoPlist.strings in Resources */,
 				27E9DE58135386F200B45B7F /* MainWindow_iPhone.xib in Resources */,
 				27E9DE5F135386F200B45B7F /* MainWindow_iPad.xib in Resources */,
-				27E9DED81354AB8800B45B7F /* zipranges.sqlite in Resources */,
+				27E9DEE01354B0D500B45B7F /* zipranges.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +409,7 @@
 			files = (
 				27E9DE70135386F200B45B7F /* InfoPlist.strings in Resources */,
 				27E9DE73135386F200B45B7F /* ZIPToStateAppTests.h in Resources */,
-				27E9DED91354AB8800B45B7F /* zipranges.sqlite in Resources */,
+				27E9DEE11354B0D500B45B7F /* zipranges.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +419,7 @@
 			files = (
 				27E9DE981353870400B45B7F /* InfoPlist.strings in Resources */,
 				27E9DE9B1353870400B45B7F /* ZIPToStateTests.h in Resources */,
-				27E9DEDA1354AB8800B45B7F /* zipranges.sqlite in Resources */,
+				27E9DEE21354B0D500B45B7F /* zipranges.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

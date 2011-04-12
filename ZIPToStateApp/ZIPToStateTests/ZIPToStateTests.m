@@ -25,11 +25,23 @@
     [super tearDown];
 }
 
+- (void)assertZIP:(NSString *)zip returnsStateCode:(NSString *)code {
+    NSString *outCode = [zipToState stateCodeForZIP:zip];
+    STAssertEqualObjects(code, outCode, @"ZIP %@ expected to match code %@, instead got %@", zip, code, outCode);
+}
+
 - (void)testDanaPoint {
-    NSString *inZip = @"92629";
-    NSString *outState = [zipToState stateCodeForZIP:inZip];
-    NSString *expected = @"CA";
-    STAssertEquals(outState, expected, @"Dana Point is in California");
+    [self assertZIP:@"92629" returnsStateCode:@"CA"];
+}
+
+- (void)testAlaska {
+    // Alaska is the last state
+    [self assertZIP:@"99801" returnsStateCode:@"AK"];
+}
+
+- (void)testNewHampshire {
+    // New Hampshire is the first state (in the US)
+    [self assertZIP:@"03242" returnsStateCode:@"NH"];
 }
 
 @end

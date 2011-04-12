@@ -30,7 +30,7 @@
 {
     ZIPToState *z = [[ZIPToState alloc] init];
     NSString *result = [z stateCodeForZIP:@"92629"];
-    STAssertEquals(result, @"CA", @"Dana Point is in California");
+    STAssertEqualObjects(@"CA", result, @"Dana Point is in California");
 }
 
 @end

@@ -8,11 +8,6 @@
 
 #import "ZIPToState.h"
 
-@interface ZIPToState (private)
-- (BOOL)open;
-- (BOOL)close;
-@end
-
 @implementation ZIPToState
 
 #pragma mark -
@@ -20,8 +15,10 @@
 
 - (id)initWithPath:(NSString *)inPath {
     if ((self = [super init])) {
-        _dbPath = [inPath retain];
-        _db = NULL;
+        _zips = [[NSArray arrayWithContentsOfURL:[NSURL fileURLWithPath:inPath]] retain];
+        if (_zips == nil) {
+            NSLog(@"Error opening ZIPS plist %@", inPath);
+        }
     }
     return self;
 }
@@ -30,93 +27,37 @@
 #pragma mark NSObject
 
 - (id)init {
-    NSString *path = [[NSBundle mainBundle] pathForResource:ZIPTOSTATE_DEFAULT_DB_NAME ofType:ZIPTOSTATE_DEFAULT_DB_EXTENSION];
+    NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:ZIPTOSTATE_DEFAULT_PLIST_NAME ofType:@"plist"];
     NSLog(@"Path: %@", path);
     return [self initWithPath:path];
 }
 
 - (void)dealloc {
-    [_dbPath release];
-    [self close];
+    [_zips release];
     return [super dealloc];
 }
 
 #pragma mark -
 #pragma mark ZIPToState (private)
 
-- (BOOL)open {
-    if (_db) {
-        return YES;
-    }
-    
-    int err = sqlite3_open([_dbPath fileSystemRepresentation], &_db);
-    if (err != SQLITE_OK) {
-        NSLog(@"Error opening database: %d", err);
-        return NO;
-    }
-    
-    return YES;
-}
-
-- (BOOL)close {
-    if (_db) {
-        sqlite3_close(_db);
-        _db = NULL;
-    }
-    return YES;
-}
-
-/*
- const char *sql = "select coffeeID, coffeeName from coffee";
- sqlite3_stmt *selectstmt;
- if(sqlite3_prepare_v2(database, sql, -1, &selectstmt, NULL) == SQLITE_OK) {
- 
- while(sqlite3_step(selectstmt) == SQLITE_ROW) {
- 
- NSInteger primaryKey = sqlite3_column_int(selectstmt, 0);
- Coffee *coffeeObj = [[Coffee alloc] initWithPrimaryKey:primaryKey];
- coffeeObj.coffeeName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(selectstmt, 1)];
- 
- coffeeObj.isDirty = NO;
- 
- [appDelegate.coffeeArray addObject:coffeeObj];
- [coffeeObj release];
- }
- }
-*/
-
 #pragma -
 #pragma mark ZIPToState (public)
 
 - (NSDictionary *)infoForZIP:(NSString *)zip {
-    if (![self open]) {
+    if (_zips == nil) {
         // Error!
         return nil;
     }
     
     NSDictionary *info = nil;
+    int zipValue = [zip intValue];
     
-    char sql[500];
-    int intZip = [zip intValue];
-    int err;
-    sqlite3_stmt *st;
-    sprintf(sql, "SELECT state, code FROM zipranges WHERE start <= '%d' AND end >= '%d'", intZip, intZip);
-    if ((err = sqlite3_prepare_v2(_db, sql, -1, &st, NULL)) == SQLITE_OK) {
-        if (sqlite3_step(st) == SQLITE_ROW) {
-            const char *sState = (const char *)sqlite3_column_text(st, 0);
-            const char *sCode = (const char *)sqlite3_column_text(st, 1);
-            if (sState != NULL && sCode != NULL) {
-                info = [NSDictionary dictionaryWithObjectsAndKeys:
-                        [NSString stringWithCString:sState encoding:NSUTF8StringEncoding],
-                        @"state",
-                        [NSString stringWithCString:sCode encoding:NSUTF8StringEncoding],
-                        @"code",
-                        nil];
-            }
-            NSLog(@"Created dictionary: %@", info);
+    for (NSDictionary *zipInfo in _zips) {
+        int currZip = [[zipInfo objectForKey:@"zip"] intValue];
+        if (currZip > zipValue) {
+            break;
         }
-    } else {
-        NSLog(@"SQLite error code %d", err);
+        info = zipInfo;
     }
     
     return info;
